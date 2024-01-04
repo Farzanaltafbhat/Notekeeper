@@ -1,7 +1,8 @@
-# NoteKeeper Application 📝
+# NoteKeeper Application 
 
-Build a notekeeper application (think Google Keep).
+Frontend Assignment
 
+(https://notekeeper-1a3ef.web.app/)
 
-
-(https://frontendassignment-seven.vercel.app/)
+Database used: Firestore Database
+Hosting: Firebase Hosting
