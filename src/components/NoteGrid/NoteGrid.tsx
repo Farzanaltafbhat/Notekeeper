@@ -35,13 +35,10 @@ const NoteGrid = ({
   setShowModal,
   handleEdit,
 }: NoteGridProps) => {
-  // console.log('pageCount', pageCount, page, totalNotesCount);
-
   useEffect(() => {
     fetchNotes();
   }, [page]);
 
-  //complete button event
   const handleCompletebtn = async (id: any) => {
     const noteRef = doc(db, 'notekeeper', NOTE_KEEPER_ID, 'notes', id);
     const Note = document.getElementById(id) as HTMLElement;
@@ -59,7 +56,6 @@ const NoteGrid = ({
     }
   };
 
-  //delete button event
   const handleDeletebtn = async (id: string) => {
     console.log('Note._id', id);
     const noteRef = doc(db, 'notekeeper', NOTE_KEEPER_ID, 'notes', id);
@@ -120,8 +116,6 @@ const NoteGrid = ({
     );
   }
 
-  console.log('pinNotesList', pinNotesList);
-
   return (
     <div>
       {/* Pinned Note List */}
@@ -137,7 +131,7 @@ const NoteGrid = ({
         <></>
       )}
 
-      {/* unpinned Note list */}
+      {/* Unpinned Note list */}
       {unPinNotesList?.length ? (
         <UnPinnedNote
           unPinNotesList={unPinNotesList}
@@ -150,7 +144,7 @@ const NoteGrid = ({
         <></>
       )}
 
-      {/* pagination */}
+      {/* Pagination */}
       <div className="pagination">
         {[...Array(pageCount).keys()].map((number) => (
           <button
