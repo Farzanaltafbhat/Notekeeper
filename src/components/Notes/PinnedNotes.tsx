@@ -2,7 +2,7 @@ import swal from 'sweetalert';
 import { doc, updateDoc } from 'firebase/firestore';
 
 import pin from '../../assets/pin.png';
-import trash from '../../assets/trashbin.png';
+import trash from '../../assets/trashbin1.png';
 import complete from '../../assets/complete.png';
 import { NoteType, PinnedNotesProps } from '../../types';
 import { db } from '../../config/firebase';
