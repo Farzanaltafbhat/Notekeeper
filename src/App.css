@@ -4,21 +4,29 @@
 }
 
 .pagination button {
-    background-color: #E4D1F9;
-    padding: 10px;
-    margin-right: 5px;
-    border-radius: 15px;
-    color: #7950EA;
+    background-color: #4CAF50; /* Green */
+    padding: 12px;
+    margin-right: 8px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #45a049;
 }
 
 .pagination .selected {
-    background-color: #7950EA;
-    color: whitesmoke;
+    background-color: #3498db; /* Blue */
+    color: #fff;
     border: none;
-    padding: 15px;
+    padding: 14px;
+    border-radius: 10px;
 }
 
 .complete-text p {
-    color: #29AB39;
-    text-decoration: #29AB39 line-through;
+    color: #e74c3c; /* Red */
+    text-decoration: line-through;
 }
